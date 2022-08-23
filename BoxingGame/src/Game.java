@@ -25,9 +25,6 @@ public class Game {
                         break;
                     }
                     f1.health = f2.hit(f1);
-                    if (isWin()){
-                        break;
-                    }
 
                 }else {
                     f1.health = f2.hit(f1);
@@ -35,10 +32,10 @@ public class Game {
                         break;
                     }
                     f2.health = f1.hit(f2);
-                    if (isWin()){
-                        break;
-                    }
 
+                }
+                if (isWin()){
+                    break;
                 }
 
                 printScore();
